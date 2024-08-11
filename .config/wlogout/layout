@@ -1,0 +1,35 @@
+
+{
+    "label" : "lock",
+    "action" : "swaylock --image ~/dotfiles/Pictures/Wallpapers/illustration-anime-girl-character-rain.jpg",
+    "text" : "Lock (L)",
+    "keybind" : "l"
+}
+
+{
+    "label" : "reboot",
+    "action" : "systemctl reboot",
+    "text" : "Reboot (R)",
+    "keybind" : "r"
+}
+
+{
+    "label" : "shutdown",
+    "action" : "systemctl poweroff",
+    "text" : "Shutdown (S)",
+    "keybind" : "s"
+}
+
+{
+    "label" : "logout",
+    "action" : "hyprctl dispatch exit 0",
+    "text" : "Exit (E)",
+    "keybind" : "e"
+}
+
+{
+    "label" : "suspend",
+    "action" : "systemctl suspend -i; swaylock -f --image ~/dotfiles/Pictures/Wallpapers/illustration-anime-girl-character-rain.jpg",
+    "text" : "Sleep (Z)",
+    "keybind" : "z"
+}

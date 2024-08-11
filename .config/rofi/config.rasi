@@ -1,0 +1,101 @@
+
+configuration{
+    modes: "run,drun,window,filebrowser";
+    lines: 5;
+    font: "JetBrains Mono Nerd Font 5";
+    show-icons: true;
+    icon-theme: "Gruvbox-Plus-Dark";
+    terminal: "kitty";
+    drun-display-format: "{icon}  {name}";
+    location: 2;
+    disable-history: false;
+    hide-scrollbar: false;
+    display-drun: "  Apps ";
+}
+
+element-text, element-icon , mode-switcher {
+    background-color: inherit;
+    text-color:       inherit;
+}
+
+window {
+    border: 1;
+    border-color: @border-col;
+    background-color: @bg-col;
+    border-radius: 8px;
+}
+
+mainbox {
+    background-color: @bg-col;
+}
+
+inputbar {
+    children: [prompt,entry];
+    background-color: @bg-col;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+prompt {
+    background-color: @blue;
+    padding: 6px;
+    text-color: @bg-col;
+    border-radius: 8px;
+    margin: 20px 0px 0px 20px;
+}
+
+entry {
+    padding: 6px;
+    margin: 20px 0px 0px 10px;
+    text-color: @fg-col;
+    background-color: @bg-col;
+}
+
+textbox-prompt-colon {
+    expand: false;
+    str: ":";
+}
+
+
+listview {
+    border: 0px 0px 0px;
+    padding: 6px 6px 0px 0px;
+    margin: 10px 0px 0px 20px;
+    columns: 1;
+    background-color: @bg-col;
+}
+
+element {
+    padding: 5px;
+    background-color: @bg-col;
+    text-color: @fg-col  ;
+}
+
+element-icon {
+    size: 25px;
+}
+
+element selected {
+    background-color:  @selected-col ;
+    text-color: @fg-col2  ;
+}
+
+mode-switcher {
+    spacing: 0;
+}
+
+button {
+    padding: 10px;
+    background-color: @bg-col-light;
+    text-color: @grey;
+    vertical-align: 0.5; 
+    horizontal-align: 0.5;
+}
+
+button selected {
+  background-color: @bg-col;
+  text-color: @blue;
+}
+
+@theme "catppuccin-mocha"
+

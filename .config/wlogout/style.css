@@ -1,0 +1,67 @@
+window {
+    font-family: 'JetBrains Mono Nerd Font';
+    font-size: 15px;
+    color: #1e1e2e; /* text */
+    background-color: rgba(40, 40, 40, 0.76);
+}
+
+button {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 14%;
+    border-radius: 20px;
+    border: 4px solid #a6adc8;
+    background-color: #1e1e2e;
+    margin: 10px;
+    transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    /* text-align: start; */
+}
+
+button:hover {
+    background-color: #458588;
+    color: #1d2021;
+}
+
+button:focus {
+    background-color: #458588;
+    color: #ebdbb2;
+}
+
+#lock {
+    background-image: image(url('./lock.png'));
+}
+#lock:hover {
+    background-image: image(url('./lock-hover.png'));
+}
+
+#logout {
+    background-image: image(url('./logout.png'));
+}
+
+#logout:hover {
+    background-image: image(url('./logout-hover.png'));
+}
+
+#suspend {
+    background-image: image(url('./sleep.png'));
+}
+
+#suspend:hover {
+    background-image: image(url('./sleep-hover.png'));
+}
+
+#shutdown {
+    background-image: image(url('./power.png'));
+}
+
+#shutdown:hover {
+    background-image: image(url('./power-hover.png'));
+}
+
+#reboot {
+    background-image: image(url('./restart.png'));
+}
+
+#reboot:hover {
+    background-image: image(url('./restart-hover.png'));
+}
