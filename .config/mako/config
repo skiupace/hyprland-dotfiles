@@ -7,7 +7,7 @@ on-button-left=dismiss
 on-button-right=dismiss-all
 
 # Style options
-font='JetBrains Mono Nerd Font'
+font='JetBrainsMono Nerd Font'
 background-color=#1e1e2e
 text-color=#cdd6f4
 width=300

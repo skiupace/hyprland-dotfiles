@@ -13,11 +13,11 @@
         "hyprland/language"
     ],
     "modules-center": [
-        "hyprland/scratchpad",
+        // "hyprland/scratchpad",
+        "tray",
         "clock"
     ],
     "modules-right": [
-        "tray",
         // "custom/notification",
 	      "bluetooth",
         "network",

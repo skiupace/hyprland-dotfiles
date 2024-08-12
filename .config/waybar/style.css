@@ -245,6 +245,8 @@ label:focus {
 }
 
 #tray {
+    background-color: shade(@base, 0.9);
+    color:#ebdbb2;
     padding: 0 5px;
     border-radius: 5px;
     margin: 1px 0 1px 4px;

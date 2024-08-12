@@ -2,7 +2,7 @@
 configuration{
     modes: "run,drun,window,filebrowser";
     lines: 5;
-    font: "JetBrains Mono Nerd Font 5";
+    font: "JetBrainsMono Nerd Font 5";
     show-icons: true;
     icon-theme: "Gruvbox-Plus-Dark";
     terminal: "kitty";
