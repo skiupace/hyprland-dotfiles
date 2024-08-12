@@ -162,10 +162,10 @@
     "network": {
         // "interface": "wlo1", // (Optional) To force the use of this interface
         "format": "{bandwidthDownBytes} {bandwidthUpBytes}",
-        "format-wifi": "{bandwidthDownBytes} {bandwidthUpBytes} ",
+        "format-wifi": "{bandwidthDownBytes} {bandwidthUpBytes}  ",
         "format-ethernet": "{bandwidthDownBytes} {bandwidthUpBytes} 󰈀",
         "tooltip-format": "{ifname} via {gwaddr} ",
-	    "on-click-right": "$HOME/.config/waybar/scripts/wifi-menu.sh",
+	      "on-click-right": "$HOME/.config/waybar/scripts/wifi-menu.sh",
         "tooltip-format-wifi": "{essid}({signalStrength}%) ",
         "tooltip-format-ethernet": "󰈀 {ifname}",
         "tooltip-format-disconnected": "Disconnected",
@@ -226,7 +226,7 @@
         "tooltip-format": "{device_alias} {status}"
     },
     "custom/power": {
-        "format": "PowerMenu",
+        "format": "Power",
         "on-click": "wlogout"
     },
     "custom/notification": {

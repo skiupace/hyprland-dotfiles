@@ -62,6 +62,7 @@ alias install="sudo pacman -S"
 alias remove="sudo pacman -R"
 alias remove-all="sudo pacman -Rcs"
 alias query="sudo pacman -Q"
+alias upgrade="sudo pacman -Syu"
 
 alias ls="lsd"
 alias ll="lsd -l"
