@@ -1,3 +1,3 @@
 ## Screenshots
-![1723402811_grim](https://github.com/user-attachments/assets/126b12d0-2896-4791-b2ec-9e9d027c070b)
-![1723423593_grim](https://github.com/user-attachments/assets/077e56bc-060d-4324-9358-e17392d6eb8b)
+![1723580995_grim](https://github.com/user-attachments/assets/ff56aab7-c1c0-49fb-91cb-fddd4ca0ca1d)
+![1723581141_grim](https://github.com/user-attachments/assets/10e11a81-1ee2-4501-a2f4-6300590c992b)
