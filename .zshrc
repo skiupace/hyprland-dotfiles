@@ -61,7 +61,7 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 alias install="sudo pacman -S"
 alias remove="sudo pacman -R"
 alias remove-all="sudo pacman -Rcs"
-alias query="sudo pacman -Q"
+alias query="pacman -Q"
 alias upgrade="sudo pacman -Syu"
 
 alias ls="lsd"

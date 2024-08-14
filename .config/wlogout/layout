@@ -1,7 +1,7 @@
 
 {
     "label" : "lock",
-    "action" : "swaylock --image ~/dotfiles/Pictures/Wallpapers/illustration-anime-girl-character-rain.jpg",
+    "action" : "swaylock --image ~/dotfiles/Pictures/Wallpapers/wallpaper_street.png",
     "text" : "Lock (L)",
     "keybind" : "l"
 }
@@ -29,7 +29,7 @@
 
 {
     "label" : "suspend",
-    "action" : "systemctl suspend -i; swaylock -f --image ~/dotfiles/Pictures/Wallpapers/illustration-anime-girl-character-rain.jpg",
+    "action" : "systemctl suspend -i; swaylock -f --image ~/dotfiles/Pictures/Wallpapers/wallpaper_street.png",
     "text" : "Sleep (Z)",
     "keybind" : "z"
 }
