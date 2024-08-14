@@ -19,7 +19,7 @@
 - stow
 
 # Installation
-**Using `gnu-stow` Package, cd into the cloned directory and execute :**
+**using `stow` package, cd into the cloned directory and execute :**
 ```bash
-> stow .
+# stow .
 ```
