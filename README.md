@@ -5,6 +5,7 @@
 # Packages Required
 - waybar
 - rofi-wayland or rofi
+-  fastfetch
 - kitty
 - tmux
 - swaybg
@@ -15,7 +16,6 @@
 - nvim
 - grim
 - slurp
-- fastfetch
 - stow
 
 # Installation
