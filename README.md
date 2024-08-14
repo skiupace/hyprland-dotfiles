@@ -21,5 +21,5 @@
 # Installation
 **using `stow` package, cd into the cloned directory and execute :**
 ```bash
-# stow .
+> stow .
 ```
