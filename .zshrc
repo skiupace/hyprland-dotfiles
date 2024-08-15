@@ -74,6 +74,9 @@ alias waybar-style="nvim ~/.config/waybar/style.css"
 alias mount-m2-ssd="doas mount /dev/sdb1 /mnt/m2-ssd"
 alias unmount-m2-ssd="doas umount /dev/sdb1"
 
+alias mount-external-hdd="doas ntfsfix --no-action /dev/sdc3 && doas mount -t ntfs3 /dev/sdc3 /mnt/external-hdd"
+alias unmount-external-hdd="doas umount -t ntfs3 /dev/sdc3"
+
 # Shell integrations
 # eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
