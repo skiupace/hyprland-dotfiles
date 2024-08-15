@@ -4,7 +4,8 @@
 
 # Required Packages
 - waybar
-- rofi-wayland or rofi
+- rofi-wayland
+- imagemagick
 -  fastfetch
 -  alacritty
 - kitty
