@@ -1,0 +1,26 @@
+[manager]
+show_hidden = true
+ratio = [1, 4, 3]
+sort_by = "alphabetical"
+sort_sensitive = false
+show_symlink = true
+
+[preview]
+tab_size = 4
+max_width = 500
+image_filter = "triangle"
+# ueberzug_scale = 0.5
+# ueberzug_offset = [0.5, 0.5, -0.5, -0.5]
+
+[opener]
+edit = [
+	{ run = 'nvim "$@"', block = true },
+]
+play = [
+	{ run = 'mpv "$@"', orphan = true, for = "unix" },
+]
+open = [
+	{ run = 'xdg-open "$@"', desc = "Open" },
+]
+
+
