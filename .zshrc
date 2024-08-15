@@ -58,10 +58,10 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 # User-define aliases
+alias query="pacman -Q"
 alias install="sudo pacman -S"
 alias remove="sudo pacman -R"
 alias remove-all="sudo pacman -Rcs"
-alias query="pacman -Q"
 alias upgrade="sudo pacman -Syu"
 
 alias ls="lsd"
@@ -71,8 +71,8 @@ alias hypr-config="nvim ~/.config/hypr/hyprland.conf"
 alias waybar-config="nvim ~/.config/waybar/config"
 alias waybar-style="nvim ~/.config/waybar/style.css"
 
-alias mount-m2-ssd="sudo mount /dev/sdb1 /mnt/m2-ssd"
-alias unmount-m2-ssd="sudo umount /dev/sdb1"
+alias mount-m2-ssd="doas mount /dev/sdb1 /mnt/m2-ssd"
+alias unmount-m2-ssd="doas umount /dev/sdb1"
 
 # Shell integrations
 # eval "$(starship init zsh)"
