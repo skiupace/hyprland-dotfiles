@@ -27,6 +27,7 @@
 # Required Fonts
 - JetBrainsMono Nerd Font
 - Noto Sans Arabic
+- noto-fonts-cjk
 - Noto Sans
 
 # Installation
