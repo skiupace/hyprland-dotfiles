@@ -22,6 +22,7 @@
 - cava
 - grim
 - slurp
+- doas
 - stow
 
 # Required Fonts
