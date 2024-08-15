@@ -6,6 +6,7 @@
 - waybar
 - rofi-wayland or rofi
 -  fastfetch
+-  alacritty
 - kitty
 - tmux
 - swaybg
