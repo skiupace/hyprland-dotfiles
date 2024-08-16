@@ -1,7 +1,6 @@
-
 {
     "label" : "lock",
-    "action" : "swaylock --image ~/dotfiles/Pictures/Wallpapers/wallpaper_street.png",
+    "action" : "swaylock",
     "text" : "Lock (L)",
     "keybind" : "l"
 }
@@ -29,7 +28,7 @@
 
 {
     "label" : "suspend",
-    "action" : "systemctl suspend -i; swaylock -f --image ~/dotfiles/Pictures/Wallpapers/wallpaper_street.png",
+    "action" : "systemctl suspend -i; swaylock -f",
     "text" : "Sleep (Z)",
     "keybind" : "z"
 }
