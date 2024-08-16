@@ -4,25 +4,28 @@
 ![1723741830_grim](https://github.com/user-attachments/assets/4835491f-3086-4e6e-9b44-c40e85d21028)
 
 # Required Packages
+- kitty
 - waybar
 - rofi-wayland
-- imagemagick
--  fastfetch
--  alacritty
-- kitty
-- tmux
 - swaybg
 - swayidle
 - swaylock
 - wlogout
 - mako
 - nvim
-- yazi
-- bat
-- cava
 - grim
 - slurp
 - stow
+
+# Optional Packages
+- imagemagick
+- fastfetch
+- alacritty
+- tmux
+- doas
+- yazi
+- bat
+- cava
 
 # Required Fonts
 - JetBrainsMono Nerd Font
