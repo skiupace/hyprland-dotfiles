@@ -77,6 +77,8 @@ alias unmount-m2-ssd="doas umount /dev/sdb1"
 alias mount-external-hdd="doas ntfsfix --no-action /dev/sdc3 && doas mount -t ntfs3 /dev/sdc3 /mnt/external-hdd"
 alias unmount-external-hdd="doas umount -t ntfs3 /dev/sdc3"
 
+alias win10="qemu-system-x86_64 -enable-kvm -bios /usr/share/OVMF/x64/OVMF.fd -m 4G -cpu host -smp 2 -vga virtio -display sdl,gl=on -drive file=/mnt/m2-ssd/vm-disks/win10.qcow2"
+
 # Shell integrations
 # eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
