@@ -1,18 +1,15 @@
-configuration{
-    modes: "run,drun,window,filebrowser";
-    lines: 5;
+* {
+    bg-col:  #1e1e2e;
+    bg-col-light: #1e1e2e;
+    border-col: #1e1e2e;
+    selected-col: #1e1e2e;
+    blue: #89b4fa;
+    fg-col: #cdd6f4;
+    fg-col2: #f38ba8;
+    grey: #6c7086;
+
+    width: 500;
     font: "JetBrainsMono Nerd Font 14";
-    show-icons: true;
-    terminal: "kitty";
-    drun-display-format: "{icon}  {name}";
-    location: 2;
-    disable-history: false;
-    hide-scrollbar: false;
-    display-drun: "  Apps ";
-    display-filebrowser: "󰉋 Files";
-    display-window: "󱂬 Windows";
-    display-run: " Run";
-    sidebar-mode: true;
 }
 
 element-text, element-icon , mode-switcher {
@@ -21,7 +18,8 @@ element-text, element-icon , mode-switcher {
 }
 
 window {
-    border: 1;
+    height: 360px;
+    border: 3px;
     border-color: @border-col;
     background-color: @bg-col;
     border-radius: 8px;
@@ -46,6 +44,11 @@ prompt {
     margin: 20px 0px 0px 20px;
 }
 
+textbox-prompt-colon {
+    expand: false;
+    str: ":";
+}
+
 entry {
     padding: 6px;
     margin: 20px 0px 0px 10px;
@@ -53,17 +56,12 @@ entry {
     background-color: @bg-col;
 }
 
-textbox-prompt-colon {
-    expand: false;
-    str: ":";
-}
-
-
 listview {
     border: 0px 0px 0px;
-    padding: 6px 6px 0px 0px;
+    padding: 6px 0px 0px;
     margin: 10px 0px 0px 20px;
     columns: 1;
+    lines: 5;
     background-color: @bg-col;
 }
 
@@ -99,4 +97,16 @@ button selected {
   text-color: @blue;
 }
 
-@theme "catppuccin-mocha"
+message {
+    background-color: @bg-col-light;
+    margin: 2px;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+textbox {
+    padding: 6px;
+    margin: 20px 0px 0px 20px;
+    text-color: @blue;
+    background-color: @bg-col-light;
+}
