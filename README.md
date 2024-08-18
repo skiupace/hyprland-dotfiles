@@ -21,6 +21,7 @@
 - imagemagick
 - fastfetch
 - alacritty
+- lazygit
 - tmux
 - doas
 - yazi
