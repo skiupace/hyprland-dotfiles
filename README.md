@@ -1,7 +1,7 @@
 # Screenshots
-![1723580995_grim](https://github.com/user-attachments/assets/ff56aab7-c1c0-49fb-91cb-fddd4ca0ca1d)
+![1723956246_grim](https://github.com/user-attachments/assets/b4f247da-7f3e-46b3-b649-d7523f75846b)
 ![1723928867_grim](https://github.com/user-attachments/assets/802b88b5-3165-457b-83fe-eac3ec5f8bf5)
-![1723741830_grim](https://github.com/user-attachments/assets/4835491f-3086-4e6e-9b44-c40e85d21028)
+![1723956634_grim](https://github.com/user-attachments/assets/82c53f46-0c2c-4850-b46b-26390f8e3812)
 
 # Required Packages
 - kitty
