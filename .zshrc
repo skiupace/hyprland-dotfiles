@@ -65,6 +65,7 @@ alias remove-all="sudo pacman -Rcs"
 alias upgrade="sudo pacman -Syu"
 
 alias ls="lsd"
+alias l="lsd -lah"
 alias ll="lsd -l"
 
 alias hypr-config="nvim ~/.config/hypr/hyprland.conf"
