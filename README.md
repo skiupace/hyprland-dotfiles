@@ -4,29 +4,29 @@
 ![1723956634_grim](https://github.com/user-attachments/assets/82c53f46-0c2c-4850-b46b-26390f8e3812)
 
 # Required Packages
-- kitty
-- waybar
-- rofi-wayland
-- swaybg
-- swayidle
-- swaylock
-- wlogout
-- mako
-- nvim
-- grim
-- slurp
-- stow
+- waybar => system bar
+- rofi-wayland => application launcher
+- swaybg => wallpaper tool
+- swayidle => idle tool
+- swaylock => screenlock tool
+- wlogout => power options tool
+- dunst => notifications daemon
+- nvim => text editor
+- kitty => terminal
+- grim => screenshot tool
+- slurp => region selector
+- stow => symlink farm manager
 
 # Optional Packages
-- imagemagick
-- fastfetch
-- alacritty
-- lazygit
-- tmux
-- doas
-- yazi
-- bat
-- cava
+- imagemagick => for image proccessing
+- fastfetch => system info
+- alacritty => terminal
+- lazygit => git cli client
+- tmux => terminal multiplexer
+- doas => same as sudo
+- yazi => cli file manager
+- bat => cat clone
+- cava => audio visualizer
 
 # Required Fonts
 - JetBrainsMono Nerd Font
