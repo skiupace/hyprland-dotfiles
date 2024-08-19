@@ -57,9 +57,6 @@ zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
-# Adding path to tmuxifier installation
-export PATH="$HOME/.config/tmux/plugins/tmuxifier/bin:$PATH"
-
 # User-define aliases
 alias query="pacman -Q"
 alias install="sudo pacman -S"
@@ -83,7 +80,6 @@ alias unmount-external-hdd="doas umount -t ntfs3 /dev/sdc3"
 
 # Shell integrations
 # eval "$(starship init zsh)"
-eval "$(tmuxifier init -)"
 eval "$(zoxide init zsh)"
 eval "$(fzf --zsh)"
 
