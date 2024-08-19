@@ -18,7 +18,7 @@
 - stow => symlink farm manager
 
 # Optional Packages
-- imagemagick 
+- imagemagick => for image proccessing
 - fastfetch => system info
 - alacritty => terminal
 - lazygit => git cli client
