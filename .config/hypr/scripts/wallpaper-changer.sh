@@ -3,9 +3,6 @@
 # Directory containing wallpapers
 WALLPAPER_DIR="$HOME/Pictures/Wallpapers/"
 
-# Path to the Hyprland configuration file
-HYPRLAND_CONF="$HOME/.config/hypr/hyprland.conf"
-
 # Generate a list of wallpapers
 wallpapers=$(find "$WALLPAPER_DIR" -type f \( -name '*.jpg' -o -name '*.png' \) -print)
 
