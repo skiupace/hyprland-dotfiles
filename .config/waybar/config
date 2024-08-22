@@ -162,8 +162,8 @@
     "network": {
         // "interface": "wlo1", // (Optional) To force the use of this interface
         "format": "{bandwidthDownBytes} {bandwidthUpBytes}",
-        "format-wifi": "{bandwidthDownBytes} {bandwidthUpBytes}  ",
-        "format-ethernet": "{bandwidthDownBytes} {bandwidthUpBytes} 󰈀",
+        "format-wifi": "{bandwidthDownBytes}  ",
+        "format-ethernet": "{bandwidthDownBytes} 󰈀",
         "tooltip-format": "{ifname} via {gwaddr} ",
 	      "on-click-right": "$HOME/.config/waybar/scripts/wifi-menu.sh",
         "tooltip-format-wifi": "{essid}({signalStrength}%) ",
