@@ -58,7 +58,7 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 # User-define aliases
-alias query="pacman -Q"
+alias query="pacman -Si"
 alias install="sudo pacman -S"
 alias remove="sudo pacman -R"
 alias remove-all="sudo pacman -Rcs"
