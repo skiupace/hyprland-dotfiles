@@ -72,6 +72,9 @@ alias hypr-config="nvim ~/.config/hypr/hyprland.conf"
 alias waybar-config="nvim ~/.config/waybar/config"
 alias waybar-style="nvim ~/.config/waybar/style.css"
 
+alias timeshift-gtk="doas timeshift-gtk"
+alias gparted="doas gparted"
+
 alias mount-m2-ssd="doas mount /dev/sdb1 /mnt/m2-ssd"
 alias unmount-m2-ssd="doas umount /dev/sdb1"
 
