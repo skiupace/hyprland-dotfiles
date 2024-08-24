@@ -19,6 +19,11 @@
 
 # Optional Packages
 - imagemagick => for image proccessing
+- xorg-xhost => for apps like gparted
+- mtpfs, jmtpfs, gvfs-mtp => for recognize android devices
+- thunar-volman => for auto mount android devices
+- thunar-archive-plugin => to add archive support
+- xarchiver => archive extractor tool
 - fastfetch => system info
 - alacritty => terminal
 - lazygit => git cli client
