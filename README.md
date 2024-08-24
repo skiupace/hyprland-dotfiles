@@ -35,7 +35,7 @@
 - Noto Sans
 
 # Installation
-**clone the dotfiles folder in your home directory, then cd into the cloned folder and execute :**
+**Clone the dotfiles folder in your home directory, then cd into the cloned folder and execute :**
 ```bash
 stow .
 ```
