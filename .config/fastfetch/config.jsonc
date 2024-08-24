@@ -13,7 +13,7 @@
     "logo": {
         "source": "~/.local/share/fastfetch/ascii/arch.txt",
         "padding": {
-            "top": 4,
+            "top": 3,
             "right": 5
         }
     },
@@ -21,7 +21,6 @@
         "separator": " "
     },
     "modules": [
-	"break",
 	"break",
 	{
             "type": "title",
@@ -85,8 +84,6 @@
             "keyColor": "34"
         }, */
         "break",
-        "colors",
-        "break",
-        "break"
+        "colors"
     ]
 }
