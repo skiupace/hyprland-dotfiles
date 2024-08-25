@@ -12,6 +12,7 @@
 - wlogout => power options tool
 - dunst => notifications daemon
 - nvim => text editor
+- yay => AUR helper
 - kitty => terminal
 - grim => screenshot tool
 - slurp => region selector
@@ -32,6 +33,7 @@
 - yazi => cli file manager
 - bat => cat clone
 - cava => audio visualizer
+- youtube-dl => video and audio downloading tool
 
 # Required Fonts
 - JetBrainsMono Nerd Font
