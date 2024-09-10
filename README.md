@@ -6,6 +6,10 @@
 # Required Packages
 - waybar => system bar
 - rofi-wayland => application launcher
+- brightnessctl => brightness daemon
+- bluetoothctl => bluetooth daemon
+- blueman => GTK bluetooth manager
+- thunar => file manager
 - swaybg => wallpaper tool
 - swayidle => idle tool
 - swaylock => screenlock tool
