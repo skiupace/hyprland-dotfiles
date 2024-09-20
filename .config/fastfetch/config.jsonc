@@ -13,7 +13,7 @@
     "logo": {
         "source": "~/.local/share/fastfetch/ascii/arch.txt",
         "padding": {
-            "top": 3,
+            "top": 2,
             "right": 5
         }
     },
@@ -43,11 +43,11 @@
             "key": " ",
             "keyColor": "34"
         },
-        {
+        /* {
             "type": "uptime",
             "key": " ",
             "keyColor": "34"
-        },
+        }, */
         {
             "type": "shell",
             "key": " ",
