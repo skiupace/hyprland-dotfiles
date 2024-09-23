@@ -4,6 +4,7 @@
     font-family: 'JetBrainsMono Nerd Font';
     font-size: 14px;
     font-weight: bold;
+    margin-bottom: 1px;
 }
 
 window#waybar {
@@ -41,7 +42,8 @@ button:hover {
 
 #workspaces button:hover {
     color: #504945;
-    background-color: #928374;
+    background-color: #313244;
+    box-shadow: inset 0 -3px #d3869b;
 }
 
 #workspaces button.active {
@@ -77,6 +79,7 @@ button:hover {
     color: #ebdbb2;
     border-radius: 5px;
     margin: 1px 2px;
+    box-shadow: inset 0 -3px #d3affa;
 }
 
 #battery {
@@ -84,6 +87,7 @@ button:hover {
     border-radius: 5px;
     margin: 1px 0 1px 4px;
     background-color: shade(@base, 0.9);
+    box-shadow: inset 0 -3px #d3affa;
 }
 
 #battery.good:not(.charging) {
@@ -129,6 +133,7 @@ label:focus {
     padding: 0 10px;
     border-radius: 5px;
     margin: 1px 0 1px 4px;
+    box-shadow: inset 0 -3px #d3affa;
 }
 
 #memory {
@@ -137,6 +142,7 @@ label:focus {
     padding: 0 10px;
     border-radius: 5px;
     margin: 1px 0 1px 4px;
+    box-shadow: inset 0 -3px #d3affa;
 }
 
 #backlight {
@@ -145,6 +151,7 @@ label:focus {
     margin: 1px 4px;
     padding: 0 10px;
     border-radius: 5px;
+    box-shadow: inset 0 -3px #d3affa;
 }
 
 #temperature {
@@ -153,6 +160,7 @@ label:focus {
     margin: 1px 0;
     padding: 0 10px;
     border-radius: 5px;
+    box-shadow: inset 0 -3px #d3affa;
 }
 
 #temperature.critical {
@@ -165,6 +173,7 @@ label:focus {
     padding: 0 10px;
     border-radius: 5px;
     margin: 1px 0 1px 4px;
+    box-shadow: inset 0 -3px #d3affa;
 }
 
 #network.disconnected {
@@ -178,6 +187,7 @@ label:focus {
     border-radius: 5px;
     padding: 0 5px;
     margin: 1px 0 1px 4px;
+    box-shadow: inset 0 -3px #d3affa;
 }
 
 #bluetooth.off {
@@ -190,6 +200,7 @@ label:focus {
     padding: 0 10px;
     border-radius: 5px;
     margin: 1px 0 1px 4px;
+    box-shadow: inset 0 -3px #d3affa;
 }
 
 #pulseaudio.muted {
@@ -203,6 +214,7 @@ label:focus {
     color: #ebdbb2;
     padding: 0 10px;
     border-radius: 5px;
+    box-shadow: inset 0 -3px #d3affa;
 }
 
 #idle_inhibitor.activated {
@@ -218,6 +230,7 @@ label:focus {
     border-radius: 5px;
     min-width: 16px;
     font-size: 10px;
+    box-shadow: inset 0 -3px #d3affa;
 }
 
 #power-profile-daemon {
@@ -242,6 +255,7 @@ label:focus {
     padding: 0 5px;
     margin: 1px 4px 1px 0;
     border-radius: 5px;
+    box-shadow: inset 0 -3px #d3affa;
 }
 
 #tray {
