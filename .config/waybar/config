@@ -226,7 +226,7 @@
         "tooltip-format": "{device_alias} {status}"
     },
     "custom/power": {
-        "format": "Power",
+        "format": "󰣇",
         "on-click": "wlogout"
     },
     "custom/notification": {

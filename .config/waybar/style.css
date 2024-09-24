@@ -38,6 +38,7 @@ button:hover {
     background-color: shade(@base, 0.9);
     color: #313244;
     margin: 1px 2px;
+    box-shadow: inset 0 -3px #a6adc8;
 }
 
 #workspaces button:hover {
@@ -79,6 +80,7 @@ button:hover {
     color: #ebdbb2;
     border-radius: 5px;
     margin: 1px 2px;
+    box-shadow: inset 0 -3px #d3869b;
 }
 
 #battery {
@@ -86,6 +88,7 @@ button:hover {
     border-radius: 5px;
     margin: 1px 0 1px 4px;
     background-color: shade(@base, 0.9);
+    box-shadow: inset 0 -3px #22e035;
 }
 
 #battery.good:not(.charging) {
@@ -131,6 +134,7 @@ label:focus {
     padding: 0 10px;
     border-radius: 5px;
     margin: 1px 0 1px 4px;
+    box-shadow: inset 0 -3px #30cdfc;
 }
 
 #memory {
@@ -139,6 +143,7 @@ label:focus {
     padding: 0 10px;
     border-radius: 5px;
     margin: 1px 0 1px 4px;
+    box-shadow: inset 0 -3px #30cdfc;
 }
 
 #backlight {
@@ -147,6 +152,7 @@ label:focus {
     margin: 1px 4px;
     padding: 0 10px;
     border-radius: 5px;
+    box-shadow: inset 0 -3px #b0c922;
 }
 
 #temperature {
@@ -155,6 +161,7 @@ label:focus {
     margin: 1px 0;
     padding: 0 10px;
     border-radius: 5px;
+    box-shadow: inset 0 -3px #ff8c00;
 }
 
 #temperature.critical {
@@ -167,6 +174,7 @@ label:focus {
     padding: 0 10px;
     border-radius: 5px;
     margin: 1px 0 1px 4px;
+    box-shadow: inset 0 -3px #7328eb;
 }
 
 #network.disconnected {
@@ -180,6 +188,7 @@ label:focus {
     border-radius: 5px;
     padding: 0 5px;
     margin: 1px 0 1px 4px;
+    box-shadow: inset 0 -3px #7328eb;
 }
 
 #bluetooth.off {
@@ -192,6 +201,7 @@ label:focus {
     padding: 0 10px;
     border-radius: 5px;
     margin: 1px 0 1px 4px;
+    box-shadow: inset 0 -3px #307bfc;
 }
 
 #pulseaudio.muted {
@@ -205,6 +215,7 @@ label:focus {
     color: #ebdbb2;
     padding: 0 10px;
     border-radius: 5px;
+    box-shadow: inset 0 -3px #a6adc8;
 }
 
 #idle_inhibitor.activated {
@@ -220,6 +231,7 @@ label:focus {
     border-radius: 5px;
     min-width: 16px;
     font-size: 10px;
+    box-shadow: inset 0 -3px #9f0fff;
 }
 
 #power-profile-daemon {
@@ -241,9 +253,10 @@ label:focus {
 #custom-power {
     background-color: shade(@base, 0.9);
     color:#ebdbb2;
-    padding: 0 5px;
+    padding: 0px 8px 0px 5px;
     margin: 1px 4px 1px 0;
     border-radius: 5px;
+    box-shadow: inset 0 -3px #ed1f1f;
 }
 
 #tray {
