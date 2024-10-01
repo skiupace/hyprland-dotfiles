@@ -15,11 +15,12 @@
     "modules-center": [
         // "hyprland/scratchpad",
         "tray",
+        "power-profiles-daemon",
         "clock"
     ],
     "modules-right": [
         // "custom/notification",
-	      "bluetooth",
+	    "bluetooth",
         "network",
         "pulseaudio",
         "battery",
@@ -178,7 +179,7 @@
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
         "format": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% <span foreground='#458588'>{icon}</span>  {format_source}",
+        "format-bluetooth": "{volume}% {icon}  {format_source}",
         "format-bluetooth-muted": "mute  {format_source}",
         "format-muted": "mute  {format_source}",
         "format-source": "{volume}% ",
