@@ -284,3 +284,36 @@ label:focus {
     margin: 1px 4px 1px 0;
     background-color: shade(@base, 0.9);
 }
+
+#keyboard-state {
+    background: shade(@base, 0.9);
+    color: #eba0ac;
+    padding: 0 5px;
+    margin: 1px 0 1px 4px;
+    border-radius: 5px;
+    /* min-width: 16px; */
+    font-size: 10px;
+    box-shadow: inset 0 -3px #eba0ac;
+}
+
+#keyboard-state label{
+    background: shade(@base, 0.9);
+    color: #eba0ac;
+    padding: 0 5px;
+    margin: 1px 0 1px 4px;
+    border-radius: 5px;
+    /* min-width: 16px; */
+    font-size: 10px;
+    box-shadow: inset 0 -3px #eba0ac;
+}
+
+#keyboard-state label.locked{
+    background: shade(@base, 0.9);
+    color: #eba0ac;
+    padding: 0 5px;
+    margin: 1px 0 1px 4px;
+    border-radius: 5px;
+    /* min-width: 16px; */
+    font-size: 10px;
+    box-shadow: inset 0 -3px #eba0ac;
+}
