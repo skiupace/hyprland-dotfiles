@@ -10,8 +10,7 @@
         "hyprland/mode",
         "group/hardware",
         "idle_inhibitor",
-        "hyprland/language",
-        "keyboard-state"
+        "hyprland/language"
     ],
     "modules-center": [
         // "hyprland/scratchpad",
