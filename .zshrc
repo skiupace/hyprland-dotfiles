@@ -81,6 +81,9 @@ alias unmount-m2-ssd="doas umount /dev/sdb1"
 alias mount-external-hdd="doas ntfsfix --no-action /dev/sdc3 && doas mount -t ntfs3 /dev/sdc3 /mnt/external-hdd"
 alias unmount-external-hdd="doas umount -t ntfs3 /dev/sdc3"
 
+alias yt-audio='yt-dlp --extract-audio --add-metadata --xattrs --embed-thumbnail --audio-quality 0 --audio-format mp3' # youtube-dl
+alias yt-video='yt-dlp --merge-output-format mp4 -f "bestvideo+bestaudio[ext=m4a]/best" --embed-thumbnail --add-metadata'
+
 # Shell integrations
 # eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
