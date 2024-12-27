@@ -17,6 +17,7 @@ fi
 # Source/Load zinit
 source "${ZINIT_HOME}/zinit.zsh"
 
+
 # Add in Powerlevel10k
 zinit ice depth=1; zinit light romkatv/powerlevel10k
 
@@ -26,15 +27,18 @@ zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
 
+
 # Load completions
 autoload -U compinit && compinit
 
 zinit cdreplay -q
 
+
 # Keybindings
 bindkey -e
 bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
+
 
 # History
 HISTSIZE=5000
@@ -50,6 +54,7 @@ setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups
 
+
 # Completion styling
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 # zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
@@ -57,12 +62,13 @@ zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
+
 # User-define aliases
 alias query="pacman -Si"
-alias install="sudo pacman -S"
+alias install="doas pacman -S"
 alias remove="sudo pacman -R"
 alias remove-all="sudo pacman -Rcs"
-alias upgrade="sudo pacman -Syu"
+alias upgrade="doas pacman -Syu"
 
 alias ls="lsd"
 alias l="lsd -lah"
@@ -84,10 +90,17 @@ alias unmount-external-hdd="doas umount -t ntfs3 /dev/sdc3"
 alias yt-audio='yt-dlp --extract-audio --add-metadata --xattrs --embed-thumbnail --audio-quality 0 --audio-format mp3' # youtube-dl
 alias yt-video='yt-dlp --merge-output-format mp4 -f "bestvideo+bestaudio[ext=m4a]/best" --embed-thumbnail --add-metadata'
 
+
 # Shell integrations
 # eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 eval "$(fzf --zsh)"
+
+
+#if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
+#  tmux attach-session -t default || tmux new-session -s default
+#fi
+
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

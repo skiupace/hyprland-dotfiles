@@ -7,7 +7,7 @@ return {
         config = function()
             require("silicon").setup {
                 font = "JetBrainsMono Nerd Font Propo=34;Noto Color Emoji=34",
-                theme = "catppuccin",
+                theme = "catppuccin-mocha",
                 debug = false,
             }
         end,
