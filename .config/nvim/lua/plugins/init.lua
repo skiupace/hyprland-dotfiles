@@ -43,6 +43,9 @@ return {
                 "eslint-lsp",
                 "js-debug-adapter",
                 "emmet-language-server",
+                "pyright",
+                "mypy",
+                "ruff",
             },
         },
     },
@@ -57,6 +60,7 @@ return {
                 "css",
                 "javascript",
                 "typescript",
+                "python",
                 "c",
             },
         },
@@ -75,18 +79,25 @@ return {
             require("nvim-ts-autotag").setup()
         end,
     },
-    {
-        "SmiteshP/nvim-navic",
-        event = "LspAttach",
-        config = function()
-            dofile(vim.g.base46_cache .. "navic")
-
-            require("nvim-navic").setup {
-                highlight = true,
-                lsp = { auto_attach = true },
-            }
-
-            vim.o.winbar = "%{%v:lua.require'nvim-navic'.get_location()%}"
-        end,
-    }
+    -- {
+    --     "SmiteshP/nvim-navic",
+    --     event = "LspAttach",
+    --     config = function()
+    --         dofile(vim.g.base46_cache .. "navic")
+    --
+    --         require("nvim-navic").setup {
+    --             highlight = true,
+    --             lsp = { auto_attach = true },
+    --         }
+    --
+    --         vim.o.winbar = "%{%v:lua.require'nvim-navic'.get_location()%}"
+    --     end,
+    -- },
+    -- {
+    --     "jose-elias-alvarez/null-ls.nvim",
+    --     ft = {"python"},
+    --     opts = function ()
+    --         return require "configs.null-ls"
+    --     end,
+    -- }
 }
