@@ -26,27 +26,18 @@ command = zsh --login -c "if command -v tmux >/dev/null 2>&1; then tmux attach |
 # Horizontal window padding. This applies padding between the terminal cells
 # and the left and right window borders. The value is in points, meaning that
 # it will be scaled appropriately for screen DPI.
-# 
-# If this value is set too large, the screen will render nothing, because the
-# grid will be completely squished by the padding. It is up to you as the user
-# to pick a reasonable value. If you pick an unreasonable value, a warning
-# will appear in the logs.
 window-padding-x = 4,2
 
 # Vertical window padding. This applies padding between the terminal cells and
 # the top and bottom window borders. The value is in points, meaning that it
 # will be scaled appropriately for screen DPI.
-# 
-# If this value is set too large, the screen will render nothing, because the
-# grid will be completely squished by the padding. It is up to you as the user
-# to pick a reasonable value. If you pick an unreasonable value, a warning
-# will appear in the logs.
 window-padding-y = 6,0
 
 font-family = "JetBrainsMono Nerd Font"
 font-size = 11
 
 window-decoration = false
+window-theme = ghostty
 window-vsync = true
 
 # Confirms that a surface should be closed before closing it. This defaults to
@@ -61,6 +52,6 @@ background-blur-radius = 20
 
 mouse-hide-while-typing = true
 confirm-close-surface = false
+
 cursor-style-blink = true
-window-theme = ghostty 
 shell-integration-features = true
