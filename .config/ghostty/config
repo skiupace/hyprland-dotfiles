@@ -1,5 +1,7 @@
 config-file = themes/catppuccin-mocha
 
+term = xterm-ghostty
+
 # Some shaders can be found in this repo, they're usually uploaded to discord
 # https://github.com/hackrmomo/ghostty-shaders
 # custom-shader = shaders/animated-gradient-shader.glsl
@@ -54,5 +56,11 @@ confirm-close-surface = false
 keybind = ctrl+i=inspector:toggle
 keybind = ctrl+d=new_split:right
 
-background-opacity = 0
-background-blur-radius = 0
+background-opacity = 0.8
+background-blur-radius = 20
+
+mouse-hide-while-typing = true
+confirm-close-surface = false
+cursor-style-blink = true
+window-theme = ghostty 
+shell-integration-features = true
