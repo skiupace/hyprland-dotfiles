@@ -10,9 +10,9 @@
 window#waybar {
     background-color: transparent; 
     color: #fbf1c7;
-    /* transition-property: background-color;
-    transition-duration: 0.2s; */
-    transition: all 0.1s;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    transition: all 0.3s;
 }
 
 window#waybar.hidden {
@@ -58,7 +58,21 @@ button:hover {
     border-bottom: 3px solid #ffffff;
 } */
 
-#window,
+#window {
+    background-color: shade(@base, 0.9); 
+    color: #eba0ac;
+    padding: 0 8px;
+    margin: 2px 4px;
+    border-radius: 5px;
+    box-shadow: inset 0 -3px #eba0ac;
+}
+
+window#waybar.empty #window {
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+}
+
 #workspaces {
     margin-left: 4px;
     margin-right: 4px;
