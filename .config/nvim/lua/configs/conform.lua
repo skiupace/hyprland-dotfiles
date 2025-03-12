@@ -10,6 +10,7 @@ local options = {
         scss = { "prettier" },
         html = { "prettier" },
         markdown = { "prettier" },
+        php = { "prettier" },
     },
     formatters = {
         prettier = {

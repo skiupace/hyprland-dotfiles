@@ -84,8 +84,8 @@ alias gparted="doas gparted"
 alias mount-m2-ssd="doas mount /dev/sdb1 /mnt/m2-ssd"
 alias unmount-m2-ssd="doas umount /dev/sdb1"
 
-alias mount-external-hdd="doas ntfsfix --no-action /dev/sdc3 && doas mount -t ntfs3 /dev/sdc3 /mnt/external-hdd"
-alias unmount-external-hdd="doas umount -t ntfs3 /dev/sdc3"
+alias mount-external-hdd="doas ntfsfix --no-action /dev/sdc2 && doas mount -t ntfs3 /dev/sdc2 /mnt/external-hdd"
+alias unmount-external-hdd="doas umount -t ntfs3 /dev/sdc2"
 
 alias yt-audio='yt-dlp --extract-audio --add-metadata --xattrs --embed-thumbnail --audio-quality 0 --audio-format mp3' # youtube-dl
 alias yt-video='yt-dlp --merge-output-format mp4 -f "bestvideo+bestaudio[ext=m4a]/best" --embed-thumbnail --add-metadata'
@@ -104,3 +104,14 @@ eval "$(fzf --zsh)"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# pnpm
+export PNPM_HOME="/home/ahmed47/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+# laravel
+export PATH=~/.config/composer/vendor/bin:$PATH
