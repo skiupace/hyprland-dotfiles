@@ -115,3 +115,7 @@ esac
 
 # laravel
 export PATH=~/.config/composer/vendor/bin:$PATH
+
+export PATH="$PATH:/home/ahmed47/.local/bin"
+
+. "$HOME/.local/bin/env"

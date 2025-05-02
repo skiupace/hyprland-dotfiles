@@ -62,6 +62,7 @@ return {
                 "javascript",
                 "typescript",
                 "python",
+                "rust",
                 "php",
                 "c",
             },
