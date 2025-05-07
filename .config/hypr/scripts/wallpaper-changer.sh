@@ -4,7 +4,7 @@
 WALLPAPER_DIR="$HOME/Pictures/Wallpapers/"
 
 # Generate a list of wallpapers
-wallpapers=$(find "$WALLPAPER_DIR" -type f \( -name '*.jpg' -o -name '*.png' \) -print)
+wallpapers=$(find "$WALLPAPER_DIR" -type f \( -name '*.jpg' -o -name '*.png' -o -name '*.webp' \) -print)
 
 # Extract just the filenames
 filenames=$(echo "$wallpapers" | xargs -n 1 basename)
