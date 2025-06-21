@@ -73,6 +73,7 @@ alias upgrade="doas pacman -Syu"
 alias ls="lsd"
 alias l="lsd -lah"
 alias ll="lsd -l"
+alias rm="trash -v"
 
 alias hypr-config="nvim ~/.config/hypr/hyprland.conf"
 alias waybar-config="nvim ~/.config/waybar/config"
