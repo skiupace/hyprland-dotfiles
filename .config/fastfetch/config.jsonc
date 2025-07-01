@@ -74,6 +74,11 @@
             "keyColor": "34"
         },
         {
+            "type": "memory",
+            "key": " ",
+            "keyColor": "34"
+        },
+        {
             "type": "disk",
             "key": " ",
             "keyColor": "34"

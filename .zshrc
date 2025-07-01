@@ -91,6 +91,12 @@ alias unmount-external-hdd="doas umount -t ntfs3 /dev/sdc2"
 alias yt-audio='yt-dlp --extract-audio --add-metadata --xattrs --embed-thumbnail --audio-quality 0 --audio-format mp3' # youtube-dl
 alias yt-video='yt-dlp --merge-output-format mp4 -f "bestvideo+bestaudio[ext=m4a]/best" --embed-thumbnail --add-metadata'
 
+alias searxng-serv="doas docker run --rm \
+             -d -p ${PORT}:8080 \
+             -v "${PWD}/searxng:/etc/searxng" \
+             -e "BASE_URL=http://localhost:$PORT/" \
+             -e "INSTANCE_NAME=searxng" \
+             searxng/searxng"
 
 # Shell integrations
 # eval "$(starship init zsh)"
