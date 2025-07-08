@@ -128,3 +128,4 @@ export PATH="$PATH:/home/ahmed47/.local/bin"
 . "$HOME/.local/bin/env"
 
 PATH=~/.console-ninja/.bin:$PATH
+export PATH=$PATH:$HOME/go/bin
