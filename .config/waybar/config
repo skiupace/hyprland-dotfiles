@@ -1,6 +1,6 @@
 {
     "layer": "top",
-    "height": 18,
+    "height": 20,
     // "spacing": 4,
     "reload_style_on_change": true,
     "background": "",
@@ -215,8 +215,8 @@
     },
     "bluetooth": {
         "on-click": ".config/waybar/scripts/bluetooth-control",
-        "on-click-right": "blueman-manager",
-        "on-click-middle": "blueman-manager",
+        "on-click-right": "blueberry",
+        "on-click-middle": "blueberry",
         "format": "{icon}",
         "interval": 15,
         "format-icons": {

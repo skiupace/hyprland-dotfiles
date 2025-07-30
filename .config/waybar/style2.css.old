@@ -1,0 +1,333 @@
+@import "mocha.css";
+
+* {
+    font-family: 'JetBrainsMono Nerd Font';
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 1px;
+}
+
+window#waybar {
+    background-color: transparent; 
+    color: #fbf1c7;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    transition: all 0.3s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+button {
+    /* Use box-shadow instead of border so the text isn't offset */
+    box-shadow: inset 0 -3px transparent;
+    /* Avoid rounded borders under each button name */
+    border: none;
+    border-radius: 5px;
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+button:hover {
+    background-color: shade(@crust, 0.3);
+    box-shadow: inset 0 -3px #fbf1c7;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    background-color: shade(@base, 0.9);
+    color: #d3869b;
+    margin: 1px 2px;
+    box-shadow: inset 0 -3px #d3869b;
+}
+
+#workspaces button:hover {
+    color: #504945;
+    background-color: #313244;
+    box-shadow: inset 0 -3px #d3869b;
+}
+
+#workspaces button.active {
+    background-color: #eba0ac;
+    color: #282828;
+    box-shadow: inset 0 -3px #1d1d1d;
+}
+
+/* #mode {
+    background-color: #64727d;
+    border-bottom: 3px solid #ffffff;
+} */
+
+#window {
+    background-color: shade(@base, 0.9); 
+    color: #eba0ac;
+    padding: 0 8px;
+    margin: 2px 4px;
+    border-radius: 5px;
+    box-shadow: inset 0 -3px #eba0ac;
+}
+
+window#waybar.empty #window {
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+}
+
+#workspaces {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+#clock {
+    background-color: shade(@base, 0.9);
+    padding: 0 13px;
+    color: #f5c2e7;
+    border-radius: 5px;
+    margin: 1px 2px;
+    box-shadow: inset 0 -3px #f5c2e7;
+}
+
+#battery {
+    padding: 0 10px;
+    border-radius: 5px;
+    margin: 1px 0 1px 4px;
+    color: #74c7ec;
+    background-color: shade(@base, 0.9);
+    box-shadow: inset 0 -3px #74c7ec;
+}
+
+#battery.good:not(.charging) {
+    background-color: shade(@base, 0.9);
+    color: #74c7ec;
+}
+
+#battery.warning:not(.charging) {
+    background-color: #d79921;
+    color: #ebdbb2;
+}
+
+#battery.charging, #battery.plugged {
+    background-color: shade(@base, 0.9);
+    color: #74c7ec;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: #000000;
+    }
+}
+
+#battery.critical:not(.charging) {
+    background-color: #cc241d;
+    color: #ebdbb2;
+    animation-name: blink;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+label:focus {
+    background-color: #000000;
+}
+
+#cpu {
+    background-color: shade(@base, 0.9);
+    color: #f38ba8;
+    padding: 0 10px;
+    border-radius: 5px;
+    margin: 1px 0 1px 4px;
+    box-shadow: inset 0 -3px #f38ba8;
+}
+
+#memory {
+    background-color: shade(@base, 0.9);
+    color: #f38ba8;
+    padding: 0 10px;
+    border-radius: 5px;
+    margin: 1px 0 1px 4px;
+    box-shadow: inset 0 -3px #f38ba8;
+}
+
+#backlight {
+    background-color: shade(@base, 0.9);
+    color: #89dceb;
+    margin: 1px 4px;
+    padding: 0 5px 0 9px;
+    border-radius: 5px;
+    box-shadow: inset 0 -3px #89dceb;
+}
+
+#temperature {
+    background-color: shade(@base, 0.9);
+    color: #d3869b;
+    margin: 1px 0;
+    padding: 0 10px;
+    border-radius: 5px;
+    box-shadow: inset 0 -3px #d3869b;
+}
+
+#temperature.critical {
+    background-color: #eb4d4b;
+    color: #ebdbb2;
+}
+
+#network {
+    background-color: shade(@base, 0.9);
+    color: #cba6f7;
+    padding: 0 10px;
+    border-radius: 5px;
+    margin: 1px 0 1px 4px;
+    box-shadow: inset 0 -3px #cba6f7;
+}
+
+#network.disconnected {
+    background-color: shade(@base, 0.9);
+    color: #cba6f7;
+}
+
+#bluetooth {
+    background-color: shade(@base, 0.9);
+    color: #cba6f7;
+    border-radius: 5px;
+    padding: 0px 7px 1px 5px;
+    margin: 1px 0 1px 4px;
+    box-shadow: inset 0 -3px #cba6f7;
+}
+
+#bluetooth.off {
+    background-color: shade(@base, 0.9);
+}
+
+#pulseaudio {
+    background-color: shade(@base, 0.9);
+    color: #89b4fa;
+    padding: 0 10px;
+    border-radius: 5px;
+    margin: 1px 0 1px 4px;
+    box-shadow: inset 0 -3px #89b4fa;
+}
+
+#pulseaudio.muted {
+    background-color: shade(@base, 0.9);
+    color: #89b4fa;
+}
+
+#idle_inhibitor {
+    background-color: shade(@base, 0.9);
+    margin: 1px 0 1px 4px;
+    color: #eba0ac;
+    padding: 0 10px;
+    border-radius: 5px;
+    box-shadow: inset 0 -3px #eba0ac;
+}
+
+#idle_inhibitor.activated {
+    background-color: #cba6f7;
+    color: #1d2021;
+}
+
+#language {
+    background: shade(@base, 0.9);
+    color: #eba0ac;
+    padding: 0 5px;
+    margin: 1px 0 1px 4px;
+    border-radius: 5px;
+    min-width: 16px;
+    font-size: 10px;
+    box-shadow: inset 0 -3px #eba0ac;
+}
+
+#power-profiles-daemon {
+    background: shade(@base, 0.9);
+    color: #f5c2e7;
+    padding: 0px 12px 0px 5px;
+    border-radius: 5px;
+    margin: 1px 2px 1px 4px;
+    box-shadow: inset 0 -3px #f5c2e7;
+}
+
+#scratchpad {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#scratchpad.empty {
+    background-color: transparent;
+}
+
+#custom-power {
+    background-color: shade(@base, 0.9);
+    color:#94e2d5;
+    padding: 0px 8px 0px 5px;
+    margin: 1px 4px 1px 0;
+    border-radius: 5px;
+    box-shadow: inset 0 -3px #94e2d5;
+}
+
+#tray {
+    background-color: shade(@base, 0.9);
+    color:#f5c2e7;
+    padding: 0 5px;
+    border-radius: 5px;
+    margin: 1px 0 1px 4px;
+    box-shadow: inset 0 -3px #f5c2e7;
+}
+
+#custom-notification {
+    padding: 0 5px;
+    border-radius: 5px;
+    margin: 1px 0 1px 4px;
+    color: #ebdbb2;
+    background-color: shade(@base, 0.9);
+}
+
+#custom-networkTraffic {
+    padding: 0 5px;
+    color: #ffffff;
+    margin: 1px 4px 1px 0;
+    background-color: shade(@base, 0.9);
+}
+
+#keyboard-state {
+    background: shade(@base, 0.9);
+    color: #eba0ac;
+    padding: 0 5px;
+    margin: 1px 0 1px 4px;
+    border-radius: 5px;
+    /* min-width: 16px; */
+    font-size: 10px;
+    box-shadow: inset 0 -3px #eba0ac;
+}
+
+#keyboard-state label{
+    background: shade(@base, 0.9);
+    color: #eba0ac;
+    padding: 0 5px;
+    margin: 1px 0 1px 4px;
+    border-radius: 5px;
+    /* min-width: 16px; */
+    font-size: 10px;
+    box-shadow: inset 0 -3px #eba0ac;
+}
+
+#keyboard-state label.locked{
+    background: shade(@base, 0.9);
+    color: #eba0ac;
+    padding: 0 5px;
+    margin: 1px 0 1px 4px;
+    border-radius: 5px;
+    /* min-width: 16px; */
+    font-size: 10px;
+    box-shadow: inset 0 -3px #eba0ac;
+}
